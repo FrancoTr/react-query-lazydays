@@ -1,5 +1,5 @@
 import { AxiosResponse } from 'axios';
-import { QueryClient, useQuery, useQueryClient } from 'react-query';
+import { useQuery, useQueryClient } from 'react-query';
 
 import type { User } from '../../../../../shared/types';
 import { axiosInstance, getJWTHeader } from '../../../axiosInstance';
