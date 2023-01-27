@@ -38,7 +38,7 @@ export function useUser(): UseUser {
 
   // meant to be called from useAuth
   function clearUser() {
-    // TODO: reset user to null in query cache
+    queryClient.setQueryData(queryKeys.user, null);
   }
 
   return { user, updateUser, clearUser };
